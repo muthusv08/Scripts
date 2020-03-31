@@ -22,5 +22,5 @@
   - name: Pull docker image from dockerhub
     command: docker pull muthutest/docker-webapp-image:latest
 
-  - name: create container using muthutest/chic-docker-webapp/docker-webapp-image
-    command: docker run -d --name docker-webapp-container -p 4000:8080 muthutest/chic-docker-webapp/docker-webapp-image:latest
+  - name: create container using muthutest/docker-webapp-image
+    command: docker run -d --name docker-webapp-container -p 4000:8080 muthutest/docker-webapp-image:latest
