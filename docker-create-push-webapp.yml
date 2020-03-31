@@ -9,10 +9,10 @@
       chdir: /opt/docker
 
   - name: Create tag to image
-    command: docker tag muthutest/chic-docker-webapp/docker-webapp-image
+    command: docker tag docker-webapp-image muthutest/chic-docker-webapp/docker-webapp-image
 
   - name: Push image on to dockerhub
-    command: docker push muthutest/chic-docker-webapp/docker-webapp-image
+    command: docker push docker-webapp-image muthutest/chic-docker-webapp/docker-webapp-image
 
   - name: Remove docker images from ansible server
     command: docker rmi docker-webapp-image:latest muthutest/chic-docker-webapp/docker-webapp-image
